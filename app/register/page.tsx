@@ -2,7 +2,6 @@
 
 import {LoginForm} from "../../components/login/LoginForm";
 import {useLogin} from "../../hooks/auth/useLogin";
-import Link from "next/link";
 import {Text, Link as ChakraLink} from "@chakra-ui/react";
 
 export default function RegisterPage() {
@@ -20,7 +19,7 @@ export default function RegisterPage() {
             onSubmit={handleSubmit}
         >
             <Text textStyle="sm" color="fg.muted" textAlign="center">
-                Already have an account? <ChakraLink><Link href="/login">Login here</Link></ChakraLink>
+                Already have an account? <ChakraLink href="/login">Login here</ChakraLink>
             </Text>
         </LoginForm>
     );
